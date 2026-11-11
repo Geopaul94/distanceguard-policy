@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Distance Guard</title>
+<meta name="description" content="Distance Guard does not collect, transmit, or sell personal data. Camera frames are processed on the device and never saved.">
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #f6f8f7;
+    --card: #ffffff;
+    --ink: #10221f;
+    --muted: #4a5b57;
+    --line: #d9e3e0;
+    --brand: #00796b;
+    --brand-soft: #e0f2ef;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0d1614;
+      --card: #131f1d;
+      --ink: #e8f1ef;
+      --muted: #a7bab6;
+      --line: #273633;
+      --brand: #5fd3c2;
+      --brand-soft: #12302b;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  main { max-width: 780px; margin: 0 auto; padding: 40px 20px 72px; }
+  header { display: flex; align-items: center; gap: 14px; margin-bottom: 28px; }
+  .mark {
+    width: 46px; height: 46px; border-radius: 14px; flex: none;
+    background: var(--brand); display: grid; place-items: center;
+  }
+  .mark svg { width: 26px; height: 26px; }
+  .eyebrow { font-size: 13px; letter-spacing: .14em; font-weight: 700; color: var(--muted); text-transform: uppercase; }
+  h1 { font-size: clamp(28px, 5vw, 40px); line-height: 1.15; margin: 0; }
+  h2 { font-size: 20px; line-height: 1.3; margin: 36px 0 10px; }
+  p, li { color: var(--ink); }
+  .lede { color: var(--muted); margin-top: 10px; }
+  .summary {
+    background: var(--brand-soft);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 18px 20px;
+    margin: 28px 0 8px;
+  }
+  .summary strong { color: var(--brand); }
+  .summary ul { margin: 10px 0 0; padding-left: 20px; }
+  ul { padding-left: 22px; }
+  li { margin: 6px 0; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 6px 22px 14px;
+    margin: 22px 0;
+  }
+  table { width: 100%; border-collapse: collapse; margin: 12px 0 4px; font-size: 16px; }
+  th, td { text-align: left; vertical-align: top; padding: 10px 8px; border-top: 1px solid var(--line); }
+  th { color: var(--muted); font-weight: 600; white-space: nowrap; }
+  code { font-size: 15px; }
+  a { color: var(--brand); }
+  footer { margin-top: 44px; padding-top: 18px; border-top: 1px solid var(--line); color: var(--muted); font-size: 15px; }
+  @media (max-width: 520px) {
+    th { white-space: normal; }
+    table, thead, tbody, tr, th, td { display: block; }
+    tr { padding: 10px 0; border-top: 1px solid var(--line); }
+    th, td { border: 0; padding: 2px 0; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="mark" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M1.8 12S5.4 5.5 12 5.5 22.2 12 22.2 12 18.6 18.5 12 18.5 1.8 12 1.8 12Z"/>
+        <circle cx="12" cy="12" r="3.1"/>
+      </svg>
+    </div>
+    <div>
+      <div class="eyebrow">Distance Guard</div>
+      <h1>Privacy Policy</h1>
+    </div>
+  </header>
+
+  <p class="lede">Effective and last updated: <strong>11 November 2026</strong>.</p>
+
+  <section class="summary" aria-labelledby="summary-title">
+    <h2 id="summary-title" style="margin-top:6px">The short version</h2>
+    <p><strong>Distance Guard does not collect, transmit, or sell any personal data.</strong></p>
+    <ul>
+      <li>Camera frames are analysed on your phone in real time and are never saved or uploaded.</li>
+      <li>The app has <strong>no internet permission</strong>, so it cannot send data anywhere, even in the background.</li>
+      <li>No accounts, ads, analytics, or crash-reporting services.</li>
+    </ul>
+  </section>
+
+  <h2>1. Who we are</h2>
+  <p>Distance Guard is published by <strong>Ghonestapps</strong> (developer: Geo Paul). This policy covers the Android app
+  <strong>Distance Guard</strong>, application ID <code>com.ghonest.distanceguard</code>, and explains what the app does with
+  information on your device.</p>
+
+  <h2>2. Information we collect</h2>
+  <p><strong>We do not collect any personal information.</strong> The app does not ask you to create an account, and it does
+  not contain advertising, analytics, tracking, or crash-reporting software.</p>
+
+  <h2>3. Camera and face data</h2>
+  <div class="card">
+    <p>The front camera is used only while protection is running, to estimate how far the phone is from your face.</p>
+    <ul>
+      <li>Frames are processed <strong>live and entirely on your device</strong> using Google ML Kit face detection,
+      whose model is bundled inside the app and works offline.</li>
+      <li>The only value produced is a numeric eye-spacing measurement used to estimate distance. It is used for the
+      warning and lock decision and then discarded.</li>
+      <li><strong>No photos, videos, or camera frames are stored, saved to your gallery, or shared.</strong></li>
+      <li>Camera data is never sent to us, to Google, or to anyone else. The app does not request internet access.</li>
+      <li>Detection stops when you stop protection or turn the screen off.</li>
+    </ul>
+  </div>
+
+  <h2>4. Information stored on your device</h2>
+  <p>The app saves a few settings in its private storage so it remembers your choices:</p>
+  <ul>
+    <li>your calibration value (eye-spacing reference from the 40 cm setup),</li>
+    <li>warning threshold, close-use delay, and whether warn-then-lock is enabled.</li>
+  </ul>
+  <p>These values stay on your phone, are not readable by other apps, and are deleted when you uninstall the app or clear
+  its data. They are never transmitted.</p>
+
+  <h2>5. Permissions and why they are needed</h2>
+  <table>
+    <thead>
+      <tr><th scope="col">Permission</th><th scope="col">Purpose</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Camera</td><td>Measure the distance to your face while protection is on.</td></tr>
+      <tr><td>Display over other apps</td><td>Show the warning card above whatever app you are using.</td></tr>
+      <tr><td>Notifications</td><td>Show the required foreground-service notification and quick controls.</td></tr>
+      <tr><td>Device administrator (screen lock only)</td><td>Lock the screen after the warning countdown if you enable warn-then-lock. The app cannot erase data, change your password, or make other policy changes, and you can revoke this at any time in Android settings.</td></tr>
+      <tr><td>Foreground service / camera</td><td>Keep the protection session reliable while you use other apps.</td></tr>
+    </tbody>
+  </table>
+  <p>The app does <strong>not</strong> request access to your location, contacts, microphone, photos or files, SMS, call
+  logs, or your internet connection.</p>
+
+  <h2>6. Sharing and selling data</h2>
+  <p>We do not sell, rent, trade, or share personal data, because we do not collect any. The app contains no third-party
+  advertising or analytics SDKs.</p>
+
+  <h2>7. Children's privacy</h2>
+  <p>Distance Guard is a general-audience utility and does not collect personal information from anyone, including
+  children. We do not knowingly collect data from children under 13.</p>
+
+  <h2>8. Security</h2>
+  <p>Because the app does not transmit data, there is no server, database, or account that could be breached. Your
+  settings remain in the app's private storage on your phone.</p>
+
+  <h2>9. Your choices</h2>
+  <ul>
+    <li>Stop protection at any time from the app, its notification, or the warning card.</li>
+    <li>Revoke camera, display-over-other-apps, notification, or device-admin access in Android Settings.</li>
+    <li>Clear the app's data or uninstall it to remove all saved settings.</li>
+  </ul>
+
+  <h2>10. Accuracy and health disclaimer</h2>
+  <p>Distance Guard estimates distance from camera measurements. Estimates can be affected by lighting, glasses, face
+  angle, and camera hardware, so treat them as approximate. The app is a habit aid, not a medical device, and does not
+  provide medical advice or diagnosis.</p>
+
+  <h2>11. Changes to this policy</h2>
+  <p>If the app's data practices change, we will update this page and its effective date. Continued use after an update
+  means you accept the revised policy.</p>
+
+  <h2>12. Contact</h2>
+  <p>Questions about this policy? Email <a href="mailto:geopaul94@gmail.com">geopaul94@gmail.com</a>.
+  If you contact us, we receive your email address and message and use them only to reply.</p>
+
+  <footer>
+    <p>Distance Guard · <code>com.ghonest.distanceguard</code><br>
+    Privacy policy effective 11 November 2026.</p>
+  </footer>
+</main>
+</body>
+</html>
