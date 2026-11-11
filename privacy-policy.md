@@ -2,7 +2,7 @@
 
 Effective and last updated: **11 November 2026**
 
-Distance Guard is published by **Ghonestapps** (developer: Geo Paul). This policy covers the Android app **Distance Guard**, application ID `com.ghonest.distanceguard`.
+Distance Guard is published by **oortech** (developer: Geo Paul). This policy covers the Android app **Distance Guard**, application ID `com.ghonest.distanceguard`.
 
 ## The short version
 
